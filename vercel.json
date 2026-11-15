@@ -9,11 +9,30 @@
       "source": "/unsere-speisen",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/rezepte",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/rezepte/:path*",
+      "destination": "/",
+      "permanent": true
     }
   ],
   "rewrites": [
-    { "source": "/vorbestellen", "destination": "https://team.otiaa.de/vorbestellen" },
-    { "source": "/vorbestellen/:path*", "destination": "https://team.otiaa.de/vorbestellen/:path*" },
-    { "source": "/_next/:path*", "destination": "https://team.otiaa.de/_next/:path*" }
+    {
+      "source": "/vorbestellen",
+      "destination": "https://team.otiaa.de/vorbestellen"
+    },
+    {
+      "source": "/vorbestellen/:path*",
+      "destination": "https://team.otiaa.de/vorbestellen/:path*"
+    },
+    {
+      "source": "/_next/:path*",
+      "destination": "https://team.otiaa.de/_next/:path*"
+    }
   ]
 }
