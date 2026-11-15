@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-15T20:44:05.654Z",
+  "title": "Design System: OTIAA de Maman Berthe",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "primary",
+        "displayName": "Tinte",
+        "canonical": "#171310",
+        "tonalRamp": [
+          "#171310",
+          "#171310",
+          "#171310",
+          "#171310",
+          "#443f3a",
+          "#716c64",
+          "#a9a399",
+          "#d5d0c3"
+        ]
+      },
+      "gold": {
+        "role": "primary",
+        "displayName": "Kamerun-Gold",
+        "canonical": "#FEB34E",
+        "tonalRamp": [
+          "#513b20",
+          "#7f5b2c",
+          "#b9833b",
+          "#FEB34E",
+          "#fdbf6c",
+          "#fbcc89",
+          "#f9dbae",
+          "#f8e8cc"
+        ]
+      },
+      "gold-deep": {
+        "role": "secondary",
+        "displayName": "Gold dunkel",
+        "canonical": "#8F5716",
+        "tonalRamp": [
+          "#352412",
+          "#4d3213",
+          "#6b4314",
+          "#8F5716",
+          "#a4763f",
+          "#b99568",
+          "#d3bb9b",
+          "#e7dac3"
+        ]
+      },
+      "terracotta": {
+        "role": "secondary",
+        "displayName": "Terrakotta",
+        "canonical": "#C67139",
+        "tonalRamp": [
+          "#432b1a",
+          "#663d22",
+          "#92552d",
+          "#C67139",
+          "#d08b5b",
+          "#daa47d",
+          "#e6c4a7",
+          "#f0dec9"
+        ]
+      },
+      "sage": {
+        "role": "tertiary",
+        "displayName": "Salbei",
+        "canonical": "#7A8A5E",
+        "tonalRamp": [
+          "#303124",
+          "#444933",
+          "#5c6647",
+          "#7A8A5E",
+          "#939f78",
+          "#acb393",
+          "#cbcdb4",
+          "#e4e2ce"
+        ]
+      },
+      "sand": {
+        "role": "neutral",
+        "displayName": "Sand",
+        "canonical": "#F7F1E2",
+        "tonalRamp": [
+          "#4f4b45",
+          "#7c776e",
+          "#b4aea3",
+          "#F7F1E2",
+          "#f7f1e2",
+          "#f7f1e2",
+          "#f7f1e2",
+          "#f7f1e2"
+        ]
+      },
+      "field-cream": {
+        "role": "neutral",
+        "displayName": "Feldcreme",
+        "canonical": "#FFFAF0",
+        "tonalRamp": [
+          "#514d48",
+          "#7f7b75",
+          "#b9b5ad",
+          "#FFFAF0",
+          "#fdf8ed",
+          "#fcf6ea",
+          "#faf4e7",
+          "#f8f2e4"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display (Caprasimo)",
+        "purpose": "Nur die H1 jeder Seite."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "H2, Abschnittstitel."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "H3, Zeilen- und Produkttitel."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Fließtext, max. 68ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Datum, Kategorie, Foto-Credit; kein Kicker."
+      }
+    },
+    "shadows": [
+      {
+        "name": "wa-float",
+        "value": "0 6px 18px rgba(23, 19, 16, 0.28)",
+        "purpose": "Einziger Schatten: schwebender WhatsApp-Button."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Standard-Easing aller Übergänge."
+      },
+      {
+        "name": "reveal-photo",
+        "value": "clip-path inset 1.1s, settle scale 1.12 to 1 in 1.6s",
+        "purpose": "Der eine Moment: Hero-Foto."
+      },
+      {
+        "name": "data-reveal",
+        "value": "opacity + translateY(22px) 0.8s",
+        "purpose": "Sanftes Einblenden beim Scrollen, nur ohne reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "nav-brand",
+        "value": "1100px"
+      },
+      {
+        "name": "stack",
+        "value": "960px"
+      },
+      {
+        "name": "event-label",
+        "value": "700px"
+      },
+      {
+        "name": "mobile",
+        "value": "560px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Tinte-Pille für die Hauptanfrage.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\">Catering anfragen</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:.8em 1.7em;border-radius:999px;border:2px solid #171310;font-family:Figtree,system-ui,sans-serif;font-weight:600;font-size:1rem;cursor:pointer;text-decoration:none;transition:background-color .25s,color .25s,border-color .25s}.ds-btn-primary{background:#171310;color:#F7F1E2}.ds-btn-primary:hover{background:#C67139;border-color:#C67139;color:#171310}.ds-btn-primary:focus-visible{outline:3px solid #C67139;outline-offset:3px}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Zweite Aktion, Tinte-Rand.",
+      "html": "<a class=\"ds-btn ds-btn-ghost\" href=\"#\">Mehr erfahren</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:.8em 1.7em;border-radius:999px;border:2px solid #171310;font-family:Figtree,system-ui,sans-serif;font-weight:600;font-size:1rem;cursor:pointer;text-decoration:none;transition:background-color .25s,color .25s,border-color .25s}.ds-btn-ghost{background:transparent;color:#171310}.ds-btn-ghost:hover{background:#171310;color:#F7F1E2}.ds-btn-ghost:focus-visible{outline:3px solid #C67139;outline-offset:3px}"
+    },
+    {
+      "name": "Gold Button on Ink",
+      "kind": "button",
+      "refersTo": "button-on-ink",
+      "description": "Button auf Tinte-Bändern.",
+      "html": "<div style=\"background:#171310;padding:16px\"><a class=\"ds-btn ds-btn-gold\" href=\"#\">Anfragen</a></div>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:.8em 1.7em;border-radius:999px;border:2px solid #171310;font-family:Figtree,system-ui,sans-serif;font-weight:600;font-size:1rem;cursor:pointer;text-decoration:none;transition:background-color .25s,color .25s,border-color .25s}.ds-btn-gold{background:#FEB34E;border-color:#FEB34E;color:#171310}.ds-btn-gold:hover{background:#F7F1E2;border-color:#F7F1E2}.ds-btn-gold:focus-visible{outline:3px solid #FEB34E;outline-offset:3px}"
+    },
+    {
+      "name": "Filter Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Galerie-Filter, gewählt in Tinte.",
+      "html": "<button class=\"ds-chip\" aria-pressed=\"false\">Kochkurs Ulm</button> <button class=\"ds-chip\" aria-pressed=\"true\">Alle</button>",
+      "css": ".ds-chip{font-family:Figtree,system-ui,sans-serif;font-weight:600;font-size:.95rem;padding:10px 20px;min-height:44px;border-radius:999px;border:1px solid #171310;background:transparent;color:#171310;cursor:pointer}.ds-chip:hover{background:rgba(254,179,78,.35)}.ds-chip[aria-pressed=\"true\"]{background:#171310;color:#F7F1E2}.ds-chip:focus-visible{outline:3px solid #C67139;outline-offset:3px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Formularfeld auf Feldcreme.",
+      "html": "<label class=\"ds-label\" for=\"n\">Name</label><input class=\"ds-input\" id=\"n\" type=\"text\" placeholder=\"Ihr Name\">",
+      "css": ".ds-label{display:block;font-family:Figtree,system-ui,sans-serif;font-weight:600;margin-bottom:6px}.ds-input{width:100%;font:inherit;color:#171310;background:#FFFAF0;border:1.5px solid #171310;border-radius:12px;padding:14px 16px;min-height:52px}.ds-input:focus-visible{outline:3px solid #171310;outline-offset:2px}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "button-ghost",
+      "description": "Textnavigation mit Gold-Hover und Tinte-Linie für die aktive Seite.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\">Start</a><a href=\"#\" aria-current=\"page\">Catering</a><a href=\"#\">Kochkurse</a><a href=\"#\">Feinkost</a></nav>",
+      "css": ".ds-nav{display:flex;gap:24px;font-family:Figtree,system-ui,sans-serif;}.ds-nav a{padding:8px 2px;font-weight:500;color:#171310;text-decoration:none;border-bottom:2px solid transparent}.ds-nav a:hover{border-bottom-color:#FEB34E}.ds-nav a[aria-current=\"page\"]{border-bottom-color:#171310;font-weight:700}.ds-nav a:focus-visible{outline:3px solid #C67139;outline-offset:3px}"
+    },
+    {
+      "name": "CTA Band",
+      "kind": "card",
+      "refersTo": "cta-band",
+      "description": "Gold-Fläche mit Abschluss-Aufruf.",
+      "html": "<div class=\"ds-cta\"><h2>Wir kochen für Ihr Fest.</h2><p>Schreiben Sie uns kurz, worum es geht.</p></div>",
+      "css": ".ds-cta{background:#FEB34E;color:#171310;border-radius:20px;padding:40px;font-family:Figtree,system-ui,sans-serif;}.ds-cta h2{margin:0 0 .3em;font-size:1.9rem;line-height:1.12;letter-spacing:-.015em}.ds-cta p{margin:0}"
+    },
+    {
+      "name": "Event List Row",
+      "kind": "custom",
+      "refersTo": "photo-frame",
+      "description": "Linienliste für Events, Hover mit Gold-Tönung.",
+      "html": "<a class=\"ds-event\" href=\"#\"><span><strong>Kreativmarkt Frankfurt</strong>Markt</span><span>15.11.2026</span></a>",
+      "css": ".ds-event{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:baseline;padding:18px 4px;border-top:1px solid rgba(23,19,16,.18);border-bottom:1px solid rgba(23,19,16,.18);color:#171310;text-decoration:none;font-family:Figtree,system-ui,sans-serif;transition:padding .25s,background-color .25s}.ds-event strong{display:block;font-size:1.1rem}.ds-event:hover{padding-inline:14px;background:rgba(254,179,78,.22)}.ds-event:focus-visible{outline:3px solid #C67139;outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Der gedeckte Tisch",
+    "overview": "Große, echte Fotos und Videos tragen jede Seite. Der Grund ist warmer Sand, der Text ist kurz und gastfreundlich, und der Topf ist der Star. Die Seite ist ein Brand-Book-Ableger (Brand Book 2026, vom Nutzer gepinnt): Farben und Schriften sind Vorgabe, nicht Geschmack. Das System ist flach und linienbasiert; Gold ist eine Fläche, nie ein Textton auf Sand.",
+    "keyCharacteristics": [
+      "Sand als Grund (etwa 70 %), Tinte für Bänder (Rezensionen, Mobilmenü, Footer)",
+      "Caprasimo nur für die H1 jeder Seite, Figtree für alles andere",
+      "20px-Radius für Fotos und Bänder, Pillen für Buttons, Chips und Tags",
+      "1px-Linien in Tinte oder 18 % Tinte statt Schatten",
+      "Echte Fotos in 4:3, 4:5, 9:16; keine Muster als Layout-Dekor"
+    ],
+    "rules": [
+      {
+        "name": "The Gold-Is-A-Surface Rule",
+        "body": "Gold (#FEB34E) füllt Flächen oder unterstreicht als Balken. Auf Sand ist Text-Gold immer Gold dunkel.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ink-Band Rule",
+        "body": "Dunkle Bänder sind Tinte, nie Schwarz oder Braun, und sie tragen Sand-Text.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Caprasimo Rule",
+        "body": "Caprasimo steht nur auf der H1. Alle anderen Überschriften sind Figtree 700.",
+        "section": "typography"
+      },
+      {
+        "name": "The Meta-Only Label Rule",
+        "body": "Das Label-Format kennzeichnet Datum, Kategorie oder Credit. Es sitzt nicht als Kicker über einer Überschrift.",
+        "section": "typography"
+      },
+      {
+        "name": "The Line-Not-Shadow Rule",
+        "body": "Trennung durch 1px-Linien (Tinte oder 18 % Tinte). Kein weiterer Schatten, kein Hard-Offset.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do Sand als Grund und Tinte als Band nutzen; Gold nur als Fläche oder Balken.",
+      "Do Text-Gold auf Sand immer als Gold dunkel (#8F5716) setzen.",
+      "Do Caprasimo nur für die H1 verwenden, den Rest in Figtree.",
+      "Do echte Fotos und Videos in festen Seitenverhältnissen mit 20px (oder 12px im Raster) Radius zeigen.",
+      "Do Trennung durch 1px-Linien lösen und Buttons als Pillen mit mindestens 52px Höhe bauen.",
+      "Do Fotos von Naomi Hattler mit \"Foto: Naomi Hattler\" kennzeichnen."
+    ],
+    "donts": [
+      "Don't Gold als Textfarbe auf Sand verwenden.",
+      "Don't Wax- oder Ankara-Muster als Layout-Dekor einsetzen; sie gehören nur ins Foto.",
+      "Don't ein Raster gleich großer Icon-Karten, Stock- oder KI-Bilder bauen.",
+      "Don't Schatten zur Trennung nutzen (nur der WhatsApp-Button hat einen).",
+      "Don't das Logo auf unruhigen Bildbereichen platzieren."
+    ]
+  }
+}
