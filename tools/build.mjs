@@ -63,6 +63,7 @@ function img(src, altAttr, { cls = '', lazy = true, sizes = '' } = {}) {
 /* ---------- Icons ---------- */
 const ICON = {
     ig: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.069-4.85.069-3.204 0-3.584-.012-4.849-.069-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>',
+    fb: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>',
     tt: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.65-1.62-1.1-.28-.24-.59-.52-.81-.88v13.3c0 1.64-1.33 2.97-2.97 2.97-1.64 0-2.97-1.33-2.97-2.97 0-1.64 1.33-2.97 2.97-2.97.17 0 .35.02.52.05v-4.22c-2.49.2-4.5 2.28-4.5 4.83 0 2.66 2.17 4.83 4.83 4.83 2.66 0 4.83-2.17 4.83-4.83V4.2c1.94 1.45 4.19 1.69 6.27.06-.05-1.41-.02-2.83-.02-4.24z"/></svg>',
     wa: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.585 1.961.936 3.297.936h.001c3.181 0 5.768-2.586 5.768-5.766 0-3.18-2.587-5.767-5.768-5.767zm6.591 1.637c.712.981 1.127 2.148 1.127 3.421 0 3.21-2.611 5.821-5.821 5.821-1.272 0-2.439-.415-3.419-1.126l-3.322.868.887-3.239c-.711-.98-1.127-2.147-1.127-3.419 0-3.21 2.611-5.822 5.821-5.822s5.821 2.611 5.821 5.821zm-13.623 3.42c0 4.291 3.492 7.783 7.783 7.783 1.571 0 3.033-.466 4.254-1.265l4.981 1.304-1.332-4.856c.799-1.221 1.265-2.683 1.265-4.254 0-4.291-3.491-7.782-7.782-7.782-4.292 0-7.783 3.491-7.783 7.782zm14.832 9.768l-1.956-7.147c.504-1.096.791-2.316.791-3.601 0-4.809-3.914-8.723-8.723-8.723s-8.723 3.914-8.723 8.723c0 4.808 3.914 8.722 8.723 8.722 1.285 0 2.505-.287 3.601-.791l7.147 1.956c.456.125.86.014 1.14-.138.279-.152.518-.466.518-.946v-.002z"/></svg>',
     pin: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>',
@@ -137,6 +138,7 @@ function footer() {
         ${tx('h3', '', 'Folgen Sie uns', 'Suivez-nous', 'Follow us')}
         <div class="footer-social">
           <a href="https://instagram.com/otiaa_food" target="_blank" rel="noopener" aria-label="Instagram">${ICON.ig}</a>
+          <a href="https://www.facebook.com/profile.php?id=100090462950413" target="_blank" rel="noopener" aria-label="Facebook">${ICON.fb}</a>
           <a href="https://www.tiktok.com/@otiaa4" target="_blank" rel="noopener" aria-label="TikTok">${ICON.tt}</a>
         </div>
       </div>
@@ -460,7 +462,7 @@ function buildCatering() {
         <ul class="menu-inline on-ink-pills">${menu}</ul>
         <p style="margin-top:1.8rem">${arrow('events.html#weltladen-jubilaeum', 'Mehr zum Event', 'Plus sur l’événement', 'More about the event')}</p>
       </div>
-      <div class="row-media" data-reveal style="aspect-ratio:16/9">${video('weltladen-buffet', 'h', 'Das Buffet beim Weltladen-Jubiläum')}</div>
+      <div class="recent-video" data-reveal>${video('weltladen-reel', 'v', 'Reel vom Weltladen-Jubiläum')}</div>
     </div>
   </div>
 </section>
@@ -715,16 +717,18 @@ function buildEvents() {
         <ul class="menu-inline">${menu}</ul>
         <div class="event-media two">
           <div class="vid ratio-v">${video('weltladen-reel', 'v', 'Reel vom Weltladen-Jubiläum')}</div>
-          <div style="display:grid;gap:14px">
-            <div class="vid ratio-h">${video('weltladen-buffet', 'h', 'Das Buffet beim Weltladen-Jubiläum')}</div>
-            <figure class="ratio-h">${img('assets/galerie/weltladen-team-buffet.webp', alt('Buffet mit Couscous und Jollof Rice, das Team steht dahinter'))}</figure>
-          </div>
+          <div class="vid ratio-v">${video('weltladen-buffet', 'v', 'Das Buffet beim Weltladen-Jubiläum')}</div>
+        </div>
+        <div class="event-media">
+          <figure style="aspect-ratio:4/3;max-width:640px">${img('assets/galerie/weltladen-team-gruppe.webp', alt('Berthe mit Blumenstrauß, umgeben vom Team und Gästen, vorn gestapelte Teller auf buntem Wachsstoff'))}</figure>
         </div>
         <p style="margin-top:1.2rem">${arrow('galerie.html#weltladen', 'Mehr Bilder und Videos', 'Plus de photos et de vidéos', 'More photos and videos')}</p>`)}
 
       ${ev('afrika-festival-2026', '2026', '2026', '2026', 'Pforzheim', `
         ${tx('h2', '', 'Afrika Festival Pforzheim', 'Afrika Festival Pforzheim', 'Afrika Festival Pforzheim')}
-        ${tx('p', '', 'Mit eigenem Stand beim Afrika Festival im Enzauenpark. Bilder folgen.', 'Avec notre propre stand au Afrika Festival dans l’Enzauenpark. Photos à venir.', 'With our own stall at the Afrika Festival in the Enzauenpark. Photos to follow.')}`)}
+        ${tx('p', '', 'Mit eigenem Stand beim Afrika Festival im Enzauenpark, mit Festivalmenü.', 'Avec notre propre stand au Afrika Festival dans l’Enzauenpark, avec un menu festival.', 'With our own stall at the Afrika Festival in the Enzauenpark, with a festival menu.')}
+        <div class="event-media"><figure style="aspect-ratio:700/1005;max-width:340px">${img('assets/galerie/afrika-festival-001.webp', alt('Unser Stand unter dem weißen Zelt beim Afrika Festival, Gäste bestellen'))}</figure></div>
+        <p style="margin-top:1.2rem">${arrow('galerie.html#afrika-festival', 'Mehr Bilder', 'Plus de photos', 'More photos')}</p>`)}
 
       ${ev('afro-sommertag', '20. Juli 2025', '20 juillet 2025', '20 July 2025', 'Afro Sommertag', `
         ${tx('h2', '', 'Afro Sommertag', 'Afro Sommertag', 'Afro Sommertag')}
@@ -788,8 +792,8 @@ function buildGallery() {
     const vids = [
         ['kreativmarkt-frankfurt', 'v', 'Kreativmarkt Frankfurt, 15. November 2026'],
         ['weltladen-reel', 'v', 'Weltladen-Jubiläum: der Reel'],
-        ['weltladen-buffet', 'h', 'Weltladen-Jubiläum: das Buffet'],
-        ['weltladen-buffet-oben', 'h', 'Weltladen-Jubiläum: das Buffet von oben'],
+        ['weltladen-buffet', 'v', 'Weltladen-Jubiläum: das Buffet'],
+        ['weltladen-buffet-oben', 'v', 'Weltladen-Jubiläum: das Buffet von oben'],
         ['vorbereitung', 'v', 'Vorbereitung in der Küche'],
     ].map(([n, r, label]) => `<figure class="video-card"><div class="frame ${r === 'v' ? 'ratio-v' : 'ratio-h'}">${video(n, r, label)}</div><figcaption>${label}</figcaption></figure>`).join('');
 
@@ -807,6 +811,7 @@ function buildGallery() {
       <button class="chip" data-filter="videos" aria-pressed="false">Videos</button>
       <button class="chip" data-filter="kochkurs-ulm" aria-pressed="false" ${T('Kochkurs Ulm', 'Cours à Ulm', 'Ulm cooking class')}>Kochkurs Ulm</button>
       <button class="chip" data-filter="afro-sommertag" aria-pressed="false">Afro Sommertag</button>
+      <button class="chip" data-filter="afrika-festival" aria-pressed="false">Afrika Festival</button>
       <button class="chip" data-filter="weltladen" aria-pressed="false">Weltladen Wildbad</button>
     </div>
 
@@ -825,9 +830,14 @@ function buildGallery() {
       <div class="masonry">${albumPhotos('afro-sommertag', afro)}</div>
     </section>
 
+    <section class="album" data-album="afrika-festival" id="afrika-festival">
+      <div class="album-head"><h2>Afrika Festival Pforzheim</h2><span class="credit" ${T('2026', '2026', '2026')}>2026</span></div>
+      <div class="masonry">${albumPhotos('afrika-festival', [['001', 'Unser Stand unter dem weißen Zelt beim Afrika Festival, Gäste bestellen']])}</div>
+    </section>
+
     <section class="album" data-album="weltladen" id="weltladen">
       <div class="album-head"><h2>Weltladen Wildbad</h2><span class="credit" ${T('23. Oktober 2026', '23 octobre 2026', '23 October 2026')}>23. Oktober 2026</span></div>
-      <div class="masonry">${albumPhotos('weltladen-team', [['buffet', 'Buffet mit Couscous und Jollof Rice, das Team steht dahinter']])}</div>
+      <div class="masonry">${albumPhotos('weltladen-team', [['gruppe', 'Berthe mit Blumenstrauß, umgeben vom Team und Gästen, vorn gestapelte Teller auf buntem Wachsstoff']])}</div>
     </section>
   </div>
 </section>
